@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/navbar/navbar';
 import Catalogo from './components/catalogo/catalogo';
 import ItemListContainer from './components/itemlistcontainer';
+import Contador from './components/catalogo/Contador';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <Catalogo/>
       <ItemListContainer/>
+      <Contador/>
     </div>
   );
 }
