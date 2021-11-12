@@ -2,8 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/navbar/navbar';
 import Catalogo from './components/catalogo/catalogo';
-import ItemListContainer from './components/itemlistcontainer';
-import Contador from './components/catalogo/Contador';
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <Catalogo/>
-      <ItemListContainer/>
-      <Contador/>
+      <ItemListContainer greeting="Hola User" />
     </div>
   );
 }
