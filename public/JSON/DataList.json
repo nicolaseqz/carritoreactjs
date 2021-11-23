@@ -1,5 +1,4 @@
-const data = [
-
+[
     {
         "id":1,
         "image":"https://images-na.ssl-images-amazon.com/images/I/616VM20%2BAzL.__AC_SY300_SX300_QL70_ML2_.jpg",
@@ -91,11 +90,3 @@ const data = [
         "stock": "4"
     }
 ]
-
-const getProducts = new Promise  ((resolve) => {
-    setTimeout(() => {
-        resolve(data)
-    }, 2000)
-})
-
-export default getProducts;
