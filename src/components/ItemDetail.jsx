@@ -7,7 +7,7 @@ const ItemDetail = (props) => {
             <h2>{price}</h2>
             <p>{description}</p>
             <p>{stock}</p>
-            <img src={`${image}`}></img>
+            <img src={`${image}`} alt={`${image}`}></img>
         </div>
     );
 };
