@@ -15,11 +15,11 @@ const ItemListContainer = ({greeting}) => {
      .then((data) => console.log("A ver la data", data));
  };*/
 
- const getProductsAA = async () => {
+ /*const getProductsAA = async () => {
     const getData = await fetch("../JSON/DataList.json");
     const dataResponse = await getData.json();
     console.log("Respuesta de async/await", dataResponse);
-  };
+  };*/
 
 /*useEffect(() => {
     getProducts
@@ -38,16 +38,16 @@ const ItemListContainer = ({greeting}) => {
         </div>
     )
 }*/
-    useEffect(() => {
-     setTimeout(() => getProductsAA(), 2000);
-    }, []);
-
-
     /*useEffect(() => {
+     setTimeout(() => getProductsAA(), 2000);
+    }, []);*/
+
+
+    useEffect(() => {
         getProducts
         .then((res) => setProducts(res))
         .catch((err) => alert("Ha ocurrido un error", err));
-    });*/
+    });
     
     return (
     <div className="container col-12 bg-warning">

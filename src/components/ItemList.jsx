@@ -15,8 +15,8 @@ const ItemList = ({products}) =>{
             stock = {product.stock}
             title = {product.title}
             />
-           )
-        })}
+            )
+          })}
         </div>
     )
 }
