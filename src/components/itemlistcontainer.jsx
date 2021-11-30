@@ -56,7 +56,7 @@ const ItemListContainer = ({greeting}) => {
         <h1>About</h1>
       </Link>
       <ItemCount stock={5} initial={1} />
-      <h1>ITEMDETAILCONTAINER</h1>
+      <h1>IDC</h1>
       <ItemList products={products} />
     </div>
   );
