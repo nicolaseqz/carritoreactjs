@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import ItemCount from "./ItemCount";
+
 const ItemDetail = (props) => {
     const { title, price, description, stock, image } = props.item;
     return (
@@ -8,6 +11,9 @@ const ItemDetail = (props) => {
             <p>{description}</p>
             <p>{stock}</p>
             <img src={`${image}`} alt={`${image}`}></img>
+            <Link to="/itemcount">
+               <h1>ItemCount{ItemCount}</h1>
+            </Link>
         </div>
     );
 };
