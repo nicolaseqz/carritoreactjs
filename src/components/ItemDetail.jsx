@@ -11,9 +11,7 @@ const ItemDetail = (props) => {
             <p>{description}</p>
             <p>{stock}</p>
             <img src={`${image}`} alt={`${image}`}></img>
-            <Link to="/itemcount">
-               <h1>ItemCount{ItemCount}</h1>
-            </Link>
+            <ItemCount stock={stock} initial={1} />
         </div>
     );
 };
