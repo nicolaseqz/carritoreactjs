@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/navbar/navbar';
@@ -11,11 +10,11 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Routes>
-        <Route path="/" element={<ItemListContainer greeting="Hola User"/>}/>
-        <Route path="item/:id" element={<ItemDetailContainer/>}/>
-        <Route path="about" element={<About/>}/>
-      </Routes>
+       <Routes>
+         <Route path="/" element={<ItemListContainer greeting="Hola User"/>}/>
+         <Route path="item/:id" element={<ItemDetailContainer/>}/>
+         <Route path="about" element={<About/>}/>
+       </Routes> 
     </div>
   );
 }
