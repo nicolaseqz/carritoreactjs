@@ -17,14 +17,10 @@ const ItemListContainer = ({greeting}) => {
         getProducts
         .then((res) => setProducts(res.filter((product) => product.category.toLowerCase() === categoria)))
         .catch((err) => alert("Ha ocurrido un error", err));
-    }, []);
+    }, [categoria]);
     
     return (
     <div className="container col-12 bg-warning">
-      <h3>{greeting}</h3>
-      <Link to="/about">
-        <h1>About</h1>
-      </Link>
       <ItemCount stock={5} initial={1} />
       <h1>IDC</h1>
       <ItemList products={products} />
