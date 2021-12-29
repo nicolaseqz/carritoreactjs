@@ -1,0 +1,9 @@
+.Barra {
+    width: 50px;
+    align-content: space-around;
+    border-radius: initial;
+}
+
+body {
+    align-content: space-between;
+}
